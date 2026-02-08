@@ -13,7 +13,7 @@ import logging
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Tuple
 from enum import Enum
 
 from lyrics_fetcher import Song
@@ -121,8 +121,10 @@ class FavoriteSong:
     @classmethod
     def from_song(cls, song: Song, notes: str = "", tags: List[str] = None) -> "FavoriteSong":
         """Crea da oggetto Song."""
+        # Converti song.id (str) a int per FavoriteSong.song_id
+        song_id = int(song.id) if isinstance(song.id, str) else song.id
         return cls(
-            song_id=song.id,
+            song_id=song_id,
             title=song.title,
             artist=song.artist,
             url=song.url or "",

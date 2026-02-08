@@ -131,6 +131,87 @@ MOOD_PRESETS: Dict[str, MoodPreset] = {
         keywords_en=["dream", "clouds", "stars", "fly", "magic", "infinite", "fantasy", "ethereal"],
         search_terms=["dreamy", "atmospheric", "shoegaze", "ethereal"],
         color="#a855f7"
+    ),
+    "party": MoodPreset(
+        name="Festa",
+        emoji="🎉",
+        description="Canzoni da ballare e divertirsi",
+        keywords_it=["festa", "ballare", "notte", "club", "discoteca", "divertimento", "ballo"],
+        keywords_en=["party", "dance", "night", "club", "fun", "celebrate", "groove", "beat"],
+        search_terms=["party music", "dance hits", "club anthem"],
+        color="#f43f5e"
+    ),
+    "motivational": MoodPreset(
+        name="Motivazionale",
+        emoji="💪",
+        description="Canzoni che ispirano e motivano",
+        keywords_it=["forza", "coraggio", "vittoria", "successo", "determinazione", "obiettivo", "campione"],
+        keywords_en=["strong", "courage", "victory", "success", "never give up", "champion", "winner", "believe"],
+        search_terms=["motivational", "workout", "inspirational anthem"],
+        color="#14b8a6"
+    ),
+    "melancholic": MoodPreset(
+        name="Malinconico",
+        emoji="🌧️",
+        description="Canzoni riflessive e profonde",
+        keywords_it=["malinconia", "rimpianto", "vuoto", "solitudine", "grigio", "pioggia", "autunno"],
+        keywords_en=["melancholy", "regret", "empty", "loneliness", "grey", "rain", "autumn", "bittersweet"],
+        search_terms=["melancholic", "sad indie", "emotional"],
+        color="#64748b"
+    ),
+    "sexy": MoodPreset(
+        name="Sensuale",
+        emoji="🔥",
+        description="Canzoni sensuali e seducenti",
+        keywords_it=["sensuale", "desiderio", "passione", "seduzione", "corpo", "notte", "pelle"],
+        keywords_en=["sexy", "desire", "passion", "seduction", "body", "tonight", "skin", "hot"],
+        search_terms=["sensual", "r&b", "slow jam"],
+        color="#be123c"
+    ),
+    "spiritual": MoodPreset(
+        name="Spirituale",
+        emoji="🕊️",
+        description="Canzoni spirituali e meditative",
+        keywords_it=["anima", "spirito", "pace", "meditazione", "luce", "cielo", "eterno", "divino"],
+        keywords_en=["soul", "spirit", "peace", "meditation", "light", "heaven", "eternal", "divine", "sacred"],
+        search_terms=["spiritual", "gospel", "meditation music"],
+        color="#7c3aed"
+    ),
+    "dark": MoodPreset(
+        name="Oscuro",
+        emoji="🖤",
+        description="Canzoni dark e intense",
+        keywords_it=["oscuro", "buio", "ombra", "morte", "nero", "demone", "inferno", "tenebre"],
+        keywords_en=["dark", "shadow", "death", "black", "demon", "hell", "darkness", "evil", "nightmare"],
+        search_terms=["dark", "gothic", "industrial"],
+        color="#1e1e1e"
+    ),
+    "summer": MoodPreset(
+        name="Estate",
+        emoji="☀️",
+        description="Canzoni estive e spensierate",
+        keywords_it=["estate", "sole", "mare", "spiaggia", "vacanza", "caldo", "onde"],
+        keywords_en=["summer", "sun", "beach", "vacation", "holiday", "waves", "ocean", "tropical"],
+        search_terms=["summer hits", "beach music", "tropical"],
+        color="#fbbf24"
+    ),
+    "chill": MoodPreset(
+        name="Chill",
+        emoji="🍃",
+        description="Canzoni rilassate e lo-fi",
+        keywords_it=["relax", "tranquillo", "lento", "morbido", "sottofondo", "chill"],
+        keywords_en=["chill", "relax", "lofi", "mellow", "easy", "smooth", "laid back", "vibe"],
+        search_terms=["chill", "lofi", "chillhop", "relaxing"],
+        color="#84cc16"
+    ),
+    "epic": MoodPreset(
+        name="Epico",
+        emoji="⚔️",
+        description="Canzoni epiche e cinematiche",
+        keywords_it=["epico", "battaglia", "gloria", "eroe", "leggenda", "guerra", "trionfo"],
+        keywords_en=["epic", "battle", "glory", "hero", "legend", "war", "triumph", "cinematic", "orchestral"],
+        search_terms=["epic music", "cinematic", "orchestral"],
+        color="#dc2626"
     )
 }
 
