@@ -217,17 +217,7 @@ def clear_cache():
 def create_interface() -> gr.Blocks:
     """Crea l'interfaccia Gradio."""
 
-    with gr.Blocks(
-        title="Cerca Dai Testi",
-        theme=gr.themes.Soft(
-            primary_hue="blue",
-            secondary_hue="slate",
-        ),
-        css="""
-        .gradio-container { max-width: 1200px !important; }
-        .results-container { min-height: 400px; }
-        """
-    ) as app:
+    with gr.Blocks(title="Cerca Dai Testi") as app:
 
         gr.Markdown("""
         # 🎵 Cerca Dai Testi
