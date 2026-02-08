@@ -9,6 +9,7 @@ Trova canzoni con testi semanticamente correlati a un argomento o testo fornito.
 - **Caching intelligente**: Memorizza risultati e embeddings per velocizzare ricerche ripetute
 - **Rate limiting**: Gestisce automaticamente i limiti delle API
 - **Output flessibile**: Visualizza risultati a console o esporta in JSON
+- **Interfaccia grafica**: GUI web moderna con Gradio
 
 ## Requisiti
 
@@ -44,7 +45,19 @@ cp esempio.env .env
 
 ## Utilizzo
 
-### Ricerca da testo
+### Interfaccia Grafica (GUI)
+
+```bash
+python gui.py
+```
+
+Si aprirà un'interfaccia web su http://localhost:7860 con:
+- Campo di ricerca per testo/argomento
+- Slider per numero risultati e score minimo
+- Risultati visualizzati con card colorate
+- Export JSON dei risultati
+
+### Ricerca da testo (CLI)
 
 ```bash
 python main.py --text "voglio parlare di libertà e speranza"
@@ -116,6 +129,7 @@ Il modello sentence-transformers viene scaricato al primo utilizzo (~100MB). Le 
 ```
 cerca_dai_testi/
 ├── main.py              # Entry point CLI
+├── gui.py               # Interfaccia grafica (Gradio)
 ├── config.py            # Configurazioni
 ├── lyrics_fetcher.py    # Interfaccia Genius API
 ├── semantic_matcher.py  # Matching semantico NLP
